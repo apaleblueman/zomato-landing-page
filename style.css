@@ -2,26 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .heroSection{
     background-image: url("./media/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    background-position: center;
+
 }
 
+.ServicesOfferedContainer{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 32px;
+
+}
+.weOfferCard{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.weOfferContent{
+    padding: 10px;
+    font-size: small;
+    font-weight: lighter;
+}
+.weOfferCard>img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9px  9px 0  0;
+}
 .navbar{
        display: flex;
        justify-content:space-between; 
        padding:15px 45px;
+       gap: 8px;
 }
 .navbarMenuContainer>a>i{
     display: none;
 }
 
+
 .navbar a{
     color: white;
     text-decoration: none;
+    font-size: 700;
 }
+.navbarMenuContainer{
+    display: flex;
+    gap: 18px;
+}
+
 .heroSectionContainer{
     display: flex;
     flex-direction: column;
@@ -34,4 +72,51 @@
 }
 .heroSectionInputContainer{
     display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;    
+}
+.inputLocationSelectContainer{
+    width: 35%;
+    border-right: 1px solid grey !important;
+    outline: none;      
+    border:none;
+}
+.inputRestrauntSelectContainer{
+    width: 65%;
+    border:none;
+    
+}
+input{
+    outline: none;  
+    border: none;
+}
+
+
+.heroSectionTitle{
+    font-weight: 400;
+    font-size: x-large; 
+
+}
+.collectionsContainer{
+    margin: 10px 100px 100px 200px;
+}
+.collectionsCardContainer{
+    display: flex;
+}
+.card1{
+    background-image: url(./media/collection1.avif);
+}
+.subheadingContainer{
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+.red{
+    color: red;
 }
