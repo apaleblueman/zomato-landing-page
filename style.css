@@ -9,6 +9,29 @@
     background-image: url("./media/BG.png");
 }
 
-.overlay{
-    background-image: url("./media/collection1.avif");
+.navbar{
+       display: flex;
+       justify-content:space-between; 
+       padding:15px 45px;
+}
+.navbarMenuContainer>a>i{
+    display: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.heroSectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 32px;
+}
+.heroSectionLogo{
+    width: 200px;
+}
+.heroSectionInputContainer{
+    display: flex;
 }
