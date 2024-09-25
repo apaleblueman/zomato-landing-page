@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato-landing-page</title>
-</head>
+    <title>Zomato landing page clone</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon"  href="./media/Zlogo.webp">
+    <script src="https://kit.fontawesome.com/49b1428e18.js" crossorigin="anonymous"></script>   
+</head> 
 <body>
-    <h1>Zomato-landing-page</h1>
+    <section class="heroSection">
+        <header>
+            <nav class="navbar">
+                <a href="#" >Get the app</a>
+                <div class="navabrMenuContainer">
+                    <a href="#" class="link">Inventor relations</a>
+                    <a href="#" class="link">Add restaurant</a>
+                    <a href="#" class="link">Login</a>
+                    <a href="#" class="link">Sign up</a>
+                    <a href="#" class="user_icon">
+                        <i class="fa-regular fa-user"></i>      
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="heroSectionContainer">
+            <img src="./media/heroSectionLogo.avif" class="heroSectionLogo"/>
+            <h1 class="heroSectionTitle">Discover the best food & drinks in Bangalore</h1>
+            <div class="heroSectionInputContainer">
+                <div class="inputLocationSelectContainer"><input type="text" placeholder="Bangalore"/></div>
+                <div class="inputRestaurantSelectContainer"><input type="text" placeholder="Search for your favourite restraunts"/></div>
+            </div>
+        </div>
+    </section>
+    <section class=".ServicesOfferedContainer">
+        <div class="weOfferCard">
+            <img src="./media/item1.avif">
+            <div class="weOfferContent">
+                <h2>Order Online</h2>
+                <p>Stay Home and order to your door</p>
+            </div>
+        </div>
+        <div class="weOfferCard"></div>
+            <img src="./media/item2.avif">
+            <div class="weOfferContent">
+                <h2>Dining</h2>
+                <p>View citi's great dining options</p>
+            </div>
+        </div>
+        <div class="weOfferCard"></div>
+            <img src="./media/item3.avif">
+            <div class="weOfferContent">
+                <h2>NightLife and Clubs</h2>
+                <p>Explore the city's top nightlife outlets</p>
+            </div>
+        </div>
+        
+    </section>
+    <section class="collectionsContainer">
+        <h1>collections</h1>
+        <div class="subheadingContainer">
+            <span>Explore curated lists of top restraunts, cafes,pubs.</span>
+            <span>All Collections in Bangalore.</span>
+        </div>
+        <div class="collectionsCardContainer">
+            <div class="overlay"></div>
+            <div class="collectionContent">
+                <h2>Live Cricket Screening</h2>
+                <span>60 places</span>     
+            </div>  
+        </div>
+        <div class="collectionsCardContainer">
+            <div class="overlay"></div>
+            <div class="collectionContent">
+                <h2>Some Special Sweets</h2>
+                <span>80 places</span>     
+            </div>  
+        </div>
+        <div class="collectionsCardContainer">
+            <div class="overlay"></div>
+            <div class="collectionContent">
+                <h2>Newly opened restraunts</h2>
+                <span>90 places</span>     
+            </div>  
+        </div>
+        <div class="collectionsCardContainer">
+            <div class="overlay"></div>
+            <div class="collectionContent">
+                <h2>Great Cafes, near me</h2>
+                <span>50 places</span>     
+            </div>  
+        </div>
+    </section>
+    <section class="getAppContainer">
+            <div class="left"><img src="./media/mobileBanner.avif"></div>
+            <div class="right">
+                <h1>Get the Zomato app</h1>
+                <p>We will send you a link, open it on your phone to download the app</p>
+                <div class="radioInputContainer">
+                    <div>
+                        <input type="radio" id="email" name="download">
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="phone" name="download">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="emailInputContainer">
+                    <input type="text" placeholder="youremail@domain.com">
+                    <a href="#">Share App Link</a>
+                </div>
+                <div class="appFromContainer">
+                    <h5>Download App from</h5>
+                    <div class="storeContainer">
+                        <img src="./media/appleStore.webp"/>
+                        <img src="./media/playStore.webp"/>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        
+    </footer>
+
 </body>
 </html>

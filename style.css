@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.heroSection{
+    background-image: url("./media/BG.png");
+}
+
+.overlay{
+    background-image: url("./media/collection1.avif");
+}
