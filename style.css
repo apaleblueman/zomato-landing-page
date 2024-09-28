@@ -25,7 +25,12 @@
     border: 1px solid black;
     border-radius: 10px;
     width: 300px;
+    transition: all 0.4s ease;
+}
+.weOfferCard:hover{
     
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .weOfferContent{
     padding: 10px;
@@ -45,7 +50,7 @@
        padding:15px 45px;
        gap: 8px;
 }
-.navbarMenuContainer>a>i{
+.user_icon{
     display: none;
 }
 
@@ -75,7 +80,6 @@
     justify-content:center;
     align-items: center;
     gap:10px;
-    background-color: white;
     padding: 10px;
     border-radius: 10px;
     width: 50%;    
@@ -83,12 +87,19 @@
 .inputLocationSelectContainer{
     width: 35%;
     border-right: 1px solid grey !important;
+    padding: 10px;
+    border-radius: 10px;
     outline: none;      
     border:none;
+
+    background-color: white;
 }
 .inputRestrauntSelectContainer{
     width: 65%;
     border:none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
     
 }
 input{
@@ -111,6 +122,15 @@ input{
 .card1{
     background-image: url(./media/collection1.avif);
 }
+.card2{
+    background-image: url(./media/collection2.avif);
+}
+.card3{
+    background-image: url(./media/collection3.avif);
+}
+.card4{
+    background-image: url(./media/collection4.avif);
+}
 .subheadingContainer{
     font-size: small;
     display: flex;
@@ -119,4 +139,48 @@ input{
 }
 .red{
     color: red;
+}
+
+
+@media only screen and (max-width:600px) {
+    .navbarMenuContainer .user_icon{
+        display: flex; ;
+    }
+    .link{
+        display: none;
+    }
+   .navbar{
+        padding: 15px 15px;
+    }
+    .heroSectionTitle{
+          text-align: center;
+    }
+   .heroSectionInputContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 120px 0px;
+        
+    }
+    .heroSectionInputContainer>*{
+        gap: 10px;
+        width: 100%;
+        padding: 20px;
+        
+    }
+    .heroSection{
+        height: 100vh;
+    }
+    .ServicesOfferedContainer{
+        display: flex;
+        flex-direction: column; 
+    }
+    .collectionsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .collectionsContainer>h1{
+                font-weight: 100;
+    }
 }
