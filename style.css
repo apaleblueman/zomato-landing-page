@@ -117,10 +117,44 @@ input{
 
 }
 .collectionsContainer{
-    margin: 10px 100px 100px 200px;
+    margin: 10px 100px 100px 100px;
 }
 .collectionsCardContainer{
     display: flex;
+    gap: 8px;
+    justify-content: center;
+
+}
+.card{
+    background-size: cover;
+    height: 300px;
+    width: 240px;
+    border-radius: 10px;
+    position: relative;
+}
+.overlay{
+    height: 100%;
+    width: 100%;                
+    /* background-color: rgba(66, 57, 57, 0.203); */
+    background: linear-gradient( 0deg, rgba(0, 0 ,0, 0.8) 0%, rgba(0, 0 ,0, 0.05) 50%, rgba(0, 0 ,0, 0.05) 85% );       
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+}
+
+.collectionContent > h2{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    font-weight:normal;
+    padding: 250px 10px 0px 10px;
+}
+.collectionContent > span{
+    position: absolute;
+    color: white;
+    font-weight:normal;
+    font-size: inherit;
+    padding: 270px 10px 0px 10px;
 }
 .card1{
     background-image: url(./media/collection1.avif);
@@ -135,10 +169,10 @@ input{
     background-image: url(./media/collection4.avif);
 }
 .subheadingContainer{
-    font-size: small;
+    font-size: medium;
     display: flex;
     justify-content: space-between;
-    padding: 0px 70px;
+    padding: 8px 60px;
 }
 .red{
     color: red;
@@ -179,12 +213,15 @@ input{
         flex-direction: column;
         align-items: center;
     }
-    .collectionsContainer{
+    .subheadingContainer{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
     .collectionsContainer>h1{
                 font-weight: 100;
+    }
+    .collectionsCardContainer{
+        display: flex;
     }
 }
