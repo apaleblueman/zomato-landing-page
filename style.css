@@ -272,6 +272,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 200px;
 }
 .TopFooterSection {
     display: flex;
@@ -419,6 +420,8 @@ footer{
     .getAppContainer{
         display: flex;
         flex-direction: column;
+        align-items: center;
+     
     }
     .left img{
         width: 100%;   
@@ -433,4 +436,68 @@ footer{
     .storeContainer img{
         width: 100%;
     }
+
+.TopFooterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+.TopFooterSection>img{
+    width: 20%;
+    margin-top: 20px;
+
+}
+.buttonContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.navigationContainer {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+	width: 90%;
+	margin: auto;
+	padding: 3rem 0;
+}
+.navigationContainer a{
+    text-decoration: none;
+    color: grey;
+}
+.navigationContainer a:hover{
+    color: black;
+}
+.link__container{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    gap: 8px;
+}
+.link__container>h5{
+    font-size: medium;
+}
+.social__links_container{
+    display: flex;
+    gap: 8px;
+    
+}
+.social__links_container>button{
+    border-style: none;
+    background-color: transparent;
+}
+.social__links_container>button>i{
+        color: white;
+        background-color: black;
+        border-radius: 17px;
+        padding: 8px;
+        cursor: pointer;       
+}
+.disclaimer{
+    color: grey;
+    font-size: 13px;
+    border-top: 1px solid grey;
+    margin:  0px 60px;
+    padding-top: 18px;
+}
 }               
