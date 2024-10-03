@@ -401,8 +401,6 @@ footer{
         
         justify-content: center;
         align-items: center;            
-        flex-wrap: wrap;
-        
         gap:2rem;
 
     }
@@ -499,5 +497,10 @@ footer{
     border-top: 1px solid grey;
     margin:  0px 60px;
     padding-top: 18px;
+}
+.navigationContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 }
 }               
